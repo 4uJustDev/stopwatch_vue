@@ -1,6 +1,12 @@
 <template>
     <div class="stop_watches">
         <StopWatch></StopWatch>
+        <StopWatch></StopWatch>
+        <StopWatch></StopWatch>
+        <StopWatch></StopWatch>
+        <StopWatch></StopWatch>
+        <StopWatch></StopWatch>
+        <StopWatch></StopWatch>
         <AddStopWatch></AddStopWatch>
     </div>
 </template>
@@ -24,10 +30,11 @@ import AddStopWatch from "@/components/AddStopWatch.vue"
     }
     .stop_watches{
         display: flex;
-        width: 100%;
         justify-content: space-around;
         align-items: center;
         margin-top: 72px;
+        flex-wrap: wrap;
+        padding: 0px 140px;
     }
     body{
         background-color: #353638;

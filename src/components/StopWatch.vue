@@ -1,23 +1,27 @@
 <template>
     <div class="main">
-        <div class="watches">
-            <p class="center">1111:222::333</p> 
+        <div class="timer">
+            <div class="timer_block">
+                <p class="time hour">00</p>
+            </div>
+            :
+            <div class="timer_block">
+                <p class="time minute">00</p>
+            </div>
+            :
+            <div class="timer_block">
+                <p class="time second">00</p>
+            </div>
         </div>
         <div class="buttons">
-            <!-- Start/Stop -->
             <button id="start"></button>
-
-            <button id="stop"></button>
-            <!-- Reset -->
+            <button id="stop" hidden></button>
             <button id="reset"></button>
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
 </script>
 
 <style scoped>
@@ -25,6 +29,7 @@
         width: 255px;
         height: 120px;
         background-color: #696969;
+        margin: 0px 70px 30px 70px;
     }
     .buttons{
         display: flex;
@@ -44,6 +49,15 @@
         justify-content: center;
         height: 100%;
         align-items: center;
+    }
+    .timer{
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .timer_block{
+        color: black;
     }
     /* Custom Buttons */
     #reset{

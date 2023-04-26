@@ -18,6 +18,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0px 70px 30px 70px;
     }
     #add{
         background: #9E9E9E;
